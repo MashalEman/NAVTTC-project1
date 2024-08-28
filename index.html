@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+    <title>Project1-Copy</title>
+    <style>
+      body{
+        background-color: rgb(58, 58, 58);
+        font-family: Georgia, serif;
+      }
+      .logo{
+        padding-left: 90px;
+      }
+      .mynav{
+        padding-left: 100px;
+      }
+      .navbar{
+        background-color: rgb(41,41,41);
+      }
+      .navbar .nav-link{
+        margin-left: 20px;
+        color: white;
+      }
+      .nav-link:hover{
+        color: green;
+      }
+      .carousel-item img {
+        height: 630px;
+        object-fit: cover;
+      }
+      .img1text{
+        background-color: white;
+        font-weight: bold;
+        width: 530px;
+        text-align: center;
+        font-size: 28px;
+      }
+      .img2text{
+        background-color: white;
+        font-weight: bold;
+        text-align: center;
+        width: 890px;
+        font-size: 25px;
+      }
+      .img3text{
+        background-color: white;
+        font-weight: bold;
+        text-align: center;
+        width: 600px;
+        font-size: 25px;
+      }
+      .navbar{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+      }
+      .bgimg2{
+        background-image: url(project1/bg3.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 500px;
+      }
+      .bgimg1{
+        background-image: url(project1/img7.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 500px;
+      }
+      .bgimgtxt{
+        font-weight: bold;
+        padding-top: 110px;
+        padding-left: 110px;
+        }
+      .imgtxtp{
+        font-weight: bold;
+        font-size: 20px;
+        padding-left: 110px;
+      }
+      .btn{
+        margin-left: 110px;
+       }
+      .btn:active{
+        border: 3px solid rgb(0, 161, 0);
+      }
+      .outsidebtn{
+        padding-left: 120px;
+      }
+      .card{
+        background-color: rgb(53, 53, 53);
+        box-shadow: 0 0 3px rgb(39, 38, 38);
+      }
+      .purchaise{
+        background-color: yellowgreen;
+      }
+      .txt1{
+        padding-top: 35px;
+        height: 80px;
+      }
+      .txt2{
+        height: 35px;
+        background-color: rgb(65, 215, 165);
+        font-size: 22px;
+      }
+      .footer{
+        height: 60px;
+      }
+      p{
+        line-height: 1.8em;
+      }
+      .bgimg3{
+        background-image: url(project1/img6.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 520px;
+      }
+      .img41{
+        background-image: url(project1/courses-1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 170px;
+      }
+      .img42{
+        background-image: url(project1/courses-2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 170px;
+      }
+      .img43{
+        background-image: url(project1/courses-3.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 170px;
+      }
+      .img44{
+        background-image: url(project1/courses-4.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 170px;
+      }
+      .bgimg6{
+        background-image: url(project1/bg2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 500px;
+      }
+      .p1{
+        line-height: 2.2em;
+      }
+      .btn123{
+        margin-left: 0;
+      }
+      .a123{
+        background: none;
+        text-decoration: none;
+        padding: 20px;
+        font-size: 18px;
+      }
+      .cntnr1{
+        height: 400px;
+      }
+      .cntnr2{
+        margin-left: -260px;
+      }
+    </style>
+</head>
+<body>
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-fixed-top">
+    <a href="#" class="navbar-brand logo"><img src="project1/logo2.jpg" width="65px" height="40px"></a>
+    <div class="container-fluid">
+        <div class="ms-auto">  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse mynav" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link mx-2" aria-current="page" href="#">Home</a>
+                <a class="nav-link" href="#">Services</a>
+                <a class="nav-link" href="#">Portfolio</a>
+                <a class="nav-link" href="#">Pricing</a>
+                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#">Contact</a>
+                <!--<a class="nav-link disabled bg-dark opacity-25" aria-disabled="true">Disabled</a>-->
+            </div>
+        </div>
+    </div>
+</nav>
+</header>
+<main>
+
+  
+  <div class="carousel carousel-dark slide" data-bs-ride="carousel" data-bs-interval="3000" id="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="project1/cameraimg5.jpg" alt="Image 1" class="d-block w-100">
+            <div class="carousel-caption d-none d-md-block">
+                <h1 class="img1text text-center animated fadeInUp">WELCOME TO DREAMER STUDIO!</h1>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="project1/cameraimg2.jpg" alt="Image 2" class="d-block w-100">
+            <div class="carousel-caption d-none d-md-block">
+                <h2 class="img2text text-center animated fadeInRight">DISCOVER YOUR NEXT FAVORITE CAMERA AT DREAMER STUDIO</h2>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="project1/img123.jpg" alt="Image 3" class="d-block w-100">
+            <div class="carousel-caption d-none d-md-block">
+                <h3 class="img3text text-center animated fadeInLeft">LET'S CAPTURE YOUR WORLD TOGETHER!</h3>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-interval="4000" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-interval="4000" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div><br><br>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <h1 class=" text-white fs-2">Our Services</h1>
+    </div>
+  </div><br>
+
+  <div class="row">
+    <div class="col-md-3 text-center">
+      <i class="fa-solid fa-desktop text-success fa-2x"></i><br><br>
+      <h3 class=" text-white fs-5">Web Design</h3>
+      <p class=" text-white">Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit,<br> sed do eiusmod tempor<br> 
+        incididunt ut labore et <br> dolore magna aliqua.</p>
+    </div>
+    <div class="col-md-3 text-center">
+      <i class="fa-solid fa-desktop text-success fa-2x"></i><br><br>
+      <h3 class=" text-white fs-5">UI Design</h3>
+      <p class=" text-white">Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit,<br> sed do eiusmod tempor<br> 
+        incididunt ut labore et <br> dolore magna aliqua.</p>
+    </div>
+    <div class="col-md-3 text-center">
+      <i class="fa-solid fa-trash-can text-success fa-2x"></i><br><br>
+      <h3 class=" text-white fs-5">Prototype</h3>
+      <p class=" text-white">Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit,<br> sed do eiusmod tempor<br> 
+        incididunt ut labore et <br> dolore magna aliqua.</p>
+    </div>
+    <div class="col-md-3 text-center">
+      <i class="fa-solid fa-camera text-success fa-2x"></i><br><br>
+      <h3 class=" text-white fs-5">Photography</h3>
+      <p class=" text-white">Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit,<br> sed do eiusmod tempor<br> 
+        incididunt ut labore et <br> dolore magna aliqua.</p>
+    </div>
+  </div>
+</div><br><br>
+<div class="d-block w-100 bgimg2">
+    <!--<img src="project1/bg2.jpg" alt="" class="d-block w-100">-->
+    <h1 class="text-white bgimgtxt">Do You like this clean theme ?</h1><br>
+    <div class="d-flex justify-content-left outsidebtn">
+      <button type="button" class="btn btn-success mx-2">Purchase</button>
+      <button type="button" class="btn btn-light mx-2">Follow</button>
+    </div>
+</div><br><br>
+
+<div class="container cntnr1">
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <h1 class=" text-white fs-2">Portfolio</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-8n offset-md-4">
+      <ul class="nav nav-pills">
+        <li class="nav-item"><a class="nav-link text-white active" data-bs-toggle="tab" href="#web">Web Design</a></li>
+        <li class="nav-item"><a class="nav-link text-white" data-bs-toggle="tab" href="#uidesign">Web Design</a></li>
+        <li class="nav-item"><a class="nav-link text-white" data-bs-toggle="tab" href="#prototype">Web Design</a></li>
+      </ul>
+
+      <div class="tab-content cntnr2"><br><br>
+        <div id="web" class="tab-pane container active">
+          <img src="project1/i1.jpg" alt="" width="200px" height="150px">
+          <img src="project1/i2.jpg" alt="" width="200px" height="150px">
+          <img src="project1/i3.jpg" alt="" width="200px" height="150px">
+        </div>
+
+
+        <div id="uidesign" class="tab-pane container">
+          <img src="project1/i4.jpg" alt="" width="200px" height="150px">
+          <img src="project1/i5.jpg" alt="" width="200px" height="150px">
+          <img src="project1/i6.jpg" alt="" width="200px" height="150px">
+        </div>
+
+
+        <div id="prototype" class="tab-pane container">
+          <img src="project1/i7.jpg" alt="" width="200px" height="150px">
+          <img src="project1/i8.jpg" alt="" width="200px" height="150px">
+          <img src="project1/i9.jpg" alt="" width="200px" height="150px">
+        </div>
+      </div>
+    </div>
+  </div>
+</div><br>
+
+<div class="d-block w-100 bgimg1">
+  <h1 class="text-white bgimgtxt">Pricing Tables</h1><br><br>
+  <p class="text-white imgtxtp">Clean and beautiful flat table</p>
+</div><br><br><br>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <h1 class=" text-white fs-2">Our Prices</h1>
+    </div>
+  </div>
+</div><br>
+
+<div class="profile-area">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-3">
+        <div class="card">
+          <div class="txt1 text-white text-center">Website hosting</div>
+          <div class="txt2 text-white text-center">$10/Month</div><br>
+          <div class="main-text">
+            <p class="text-center text-white"> <strong> 2x </strong> Option 1 <br> <strong>Free</strong> Option 2 <br> <strong> Unlimited </strong> Option 3 <br>
+               <strong> Unlimited </strong> Option 4 <br> <strong> Unlimited </strong> Option 4 <br> <strong> 1x </strong> Option 5 </p>
+          </div><hr>
+          <div class="text-center footer">
+            <button type="button" class="btn purchaise" style="margin: auto;">Purchaise</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card bg-light">
+          <div class="txt1 text-center">Reseller Cloud</div>
+          <div class="txt2 text-center text-white">$10/Month</div><br>
+          <div class="main-text">
+            <p class="text-center"> <strong> 2x </strong> Option 1 <br> <strong>Free</strong> Option 2 <br> <strong> Unlimited </strong> Option 3 <br>
+               <strong> Unlimited </strong> Option 4 <br> <strong> Unlimited </strong> Option 4 <br> <strong> 1x </strong> Option 5 </p>
+          </div><hr>
+          <div class="text-center footer">
+            <button type="button" class="btn purchaise" style="margin: auto;">Purchaise</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card">
+          <div class="txt1 text-white text-center">Dedicating hosting</div>
+          <div class="txt2 text-white text-center">$10/Month</div><br>
+          <div class="main-text">
+            <p class="text-center text-white"> <strong> 2x </strong> Option 1 <br> <strong>Free</strong> Option 2 <br> <strong> Unlimited </strong> Option 3 <br>
+               <strong> Unlimited </strong> Option 4 <br> <strong> Unlimited </strong> Option 4 <br> <strong> 1x </strong> Option 5 </p>
+          </div><hr>
+          <div class="text-center footer">
+            <button type="button" class="btn purchaise" style="margin: auto;">Purchaise</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+  </div>
+</div><br>
+<div class="profile-area">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-2">
+        <div class="card">
+          <div class="txt1 text-white text-center">Website hosting</div>
+          <div class="txt2 text-white text-center">$10/Month</div><br>
+          <div class="main-text">
+            <p class="text-center text-white"> <strong> 2x </strong> Option 1 <br> <strong>Free</strong> Option 2 <br> <strong> Unlimited </strong> Option 3 <br>
+               <strong> Unlimited </strong> Option 4 <br> <strong> Unlimited </strong> Option 4 <br> <strong> 1x </strong> Option 5 </p>
+          </div><hr>
+          <div class="text-center footer">
+            <button type="button" class="btn purchaise" style="margin: auto;">Purchaise</button>
+          </div>
+        </div>
+      </div>&emsp;&emsp;
+
+      <div class="col-md-2">
+        <div class="card bg-light">
+          <div class="txt1 text-center">Reseller Cloud</div>
+          <div class="txt2 text-center text-white">$10/Month</div><br>
+          <div class="main-text">
+            <p class="text-center"> <strong> 2x </strong> Option 1 <br> <strong>Free</strong> Option 2 <br> <strong> Unlimited </strong> Option 3 <br>
+               <strong> Unlimited </strong> Option 4 <br> <strong> Unlimited </strong> Option 4 <br> <strong> 1x </strong> Option 5 </p>
+          </div><hr>
+          <div class="text-center footer">
+            <button type="button" class="btn purchaise" style="margin: auto;">Purchaise</button>
+          </div>
+        </div>
+      </div>&emsp;&emsp;
+
+      <div class="col-md-2">
+        <div class="card">
+          <div class="txt1 text-white text-center">Dedicating hosting</div>
+          <div class="txt2 text-white text-center">$10/Month</div><br>
+          <div class="main-text">
+            <p class="text-center text-white"> <strong> 2x </strong> Option 1 <br> <strong>Free</strong> Option 2 <br> <strong> Unlimited </strong> Option 3 <br>
+               <strong> Unlimited </strong> Option 4 <br> <strong> Unlimited </strong> Option 4 <br> <strong> 1x </strong> Option 5 </p>
+          </div><hr>
+          <div class="text-center footer">
+            <button type="button" class="btn purchaise" style="margin: auto;">Purchaise</button>
+          </div>
+        </div>
+      </div>&emsp;&emsp;
+
+      <div class="col-md-2">
+        <div class="card">
+          <div class="txt1 text-white text-center">Dedicating hosting</div>
+          <div class="txt2 text-white text-center">$10/Month</div><br>
+          <div class="main-text">
+            <p class="text-center text-white"> <strong> 2x </strong> Option 1 <br> <strong>Free</strong> Option 2 <br> <strong> Unlimited </strong> Option 3 <br>
+               <strong> Unlimited </strong> Option 4 <br> <strong> Unlimited </strong> Option 4 <br> <strong> 1x </strong> Option 5 </p>
+          </div><hr>
+          <div class="text-center footer">
+            <button type="button" class="btn purchaise" style="margin: auto;">Purchaise</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+  </div>
+</div><br><br><br>
+
+<section class="clients-about-us text-white">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4"><hr style="width: 100%; border-width: 5px; border-color: rgb(120, 120, 120);"></div>
+      <div class="col-md-4"><h2 class="text-center"> CLIENTS ABOUT US </h2></div>
+      <div class="col-md-4"><hr style="width: 100%; border-width: 5px; border-color: rgb(120, 120, 120);"></div>
+    </div><br>
+    <div class="row">
+      <div class="col-md-3"></div>
+      <div class="col-md-6">
+        <p class="text-center">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed <br>
+          do eiusmod tempor incididunt ut labore et dolore magna <br>
+          aliqua. Ut enim ad minim veniam, quis nostrud exercitation <br>
+          ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis <br>
+          aute irure dolor in reprehenderit in voluptate velit esse cillum <br>
+          dolore eu fugiat nulla pariatur. Excepteur sint occaecat <br>
+          cupidatat non proident, sunt in culpa qui officia deserunt <br>
+          mollit anim id est laborum.
+        </p>
+      </div>
+      <div class="col-md-3"></div>
+    </div>
+  </div>
+</section><br><br>
+
+<div class="d-block w-100 bgimg3">
+  <h1 class="text-white bgimgtxt">Our Team</h1><br><br><br>
+  <p class="text-white imgtxtp">We a professional and progressive team</p>
+</div><br><br><br>
+
+<div class="profile-area">
+  <div class="container">
+    <div class="row text-center text-white"><h2>About Us</h2></div><br><br>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="card card123">
+          <div class="img41"></div>
+          <div class="main-text">
+            <h4 class="text-center text-white"> Mark Caream </h4>
+            <p class="text-center text-white">Developer <br> Lorem ipsum dolor sit amet, <br> consectetur adipisicing elit, sed do <br>
+              eiusmod tempor incididunt ut <br> labore et dolore magna aliqua. Ut <br> enim ad minim veniam, quis <br> nostrud exercitation</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card card123">
+          <div class="img42"></div>
+          <div class="main-text">
+            <h4 class="text-center text-white"> Mark Caream </h4>
+            <p class="text-center text-white">Developer <br> Lorem ipsum dolor sit amet, <br> consectetur adipisicing elit, sed do <br>
+              eiusmod tempor incididunt ut <br> labore et dolore magna aliqua. Ut <br> enim ad minim veniam, quis <br> nostrud exercitation</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card card123">
+          <div class="img43"></div>
+          <div class="main-text">
+            <h4 class="text-center text-white"> Mark Caream </h4>
+            <p class="text-center text-white">Developer <br> Lorem ipsum dolor sit amet, <br> consectetur adipisicing elit, sed do <br>
+              eiusmod tempor incididunt ut <br> labore et dolore magna aliqua. Ut <br> enim ad minim veniam, quis <br> nostrud exercitation</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card card123">
+          <div class="img44"></div>
+          <div class="main-text">
+            <h4 class="text-center text-white"> Mark Caream </h4>
+            <p class="text-center text-white">Developer <br> Lorem ipsum dolor sit amet, <br> consectetur adipisicing elit, sed do <br>
+              eiusmod tempor incididunt ut <br> labore et dolore magna aliqua. Ut <br> enim ad minim veniam, quis <br> nostrud exercitation</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><br><br><br>
+
+<div class="d-block w-100 bgimg6">
+  <h1 class="text-white bgimgtxt">YOU LOOKED OVER 6000 PX</h1><br><br>
+  <p class="text-white imgtxtp">That's Great!</p>
+</div><br><br><br>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <h1 class=" text-white fs-2">Contact Us</h1><br>
+      <hr style="width: 100%; border-width: 5px; border-color: rgb(255, 255, 255);">
+    </div>
+    <div class="col-md-3 text-center"></div>
+    <div class="col-md-4 text-center">
+      
+      
+      <br><br><div class="row">
+        <div class="d-flex text-left">
+          <div class="flex-grow-1 me-3">
+            <input type="text" class="form-control bg-dark text-white">
+          </div>
+          <div class="flex-grow-1">
+            <input type="text" class="form-control bg-dark text-white">
+          </div>
+        </div>
+      </div><br>
+      <div class="row">
+        <textarea class="form-control bg-dark text-white" rows="3"></textarea>
+      </div><br>
+      <div class="d-flex text-left" style="width: 60px;">
+        <button type="submit" class="btn btn-success btn123">Submit</button>
+      </div>
+    </div>
+    <div class="col-md-2 text-center"></div>
+    <div class="col-md-3 text-left">
+      <h2 class="text-white">  More Info</h2>
+      <p class="text-left text-white p1">info@gmail.com <br> info@gmail.com <br> info@gmail.com <br> info@gmail.com</p>
+    </div>
+    <div class="col-md-1 text-center"></div>
+  </div><br>
+</div>
+
+</main>
+</body>
+</html>
